@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            textBox1 = new TextBox();
+            txtItemName = new TextBox();
             label2 = new Label();
-            textBox2 = new TextBox();
+            txtQuantity = new TextBox();
             button1 = new Button();
             SuspendLayout();
             // 
@@ -44,12 +44,12 @@
             label1.TabIndex = 0;
             label1.Text = "Item Name:";
             // 
-            // textBox1
+            // txtItemName
             // 
-            textBox1.Location = new Point(86, 48);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
-            textBox1.TabIndex = 1;
+            txtItemName.Location = new Point(86, 48);
+            txtItemName.Name = "txtItemName";
+            txtItemName.Size = new Size(100, 23);
+            txtItemName.TabIndex = 1;
             // 
             // label2
             // 
@@ -61,12 +61,12 @@
             label2.Text = "Quantity:";
             label2.Click += label2_Click;
             // 
-            // textBox2
+            // txtQuantity
             // 
-            textBox2.Location = new Point(79, 79);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(100, 23);
-            textBox2.TabIndex = 3;
+            txtQuantity.Location = new Point(79, 79);
+            txtQuantity.Name = "txtQuantity";
+            txtQuantity.Size = new Size(100, 23);
+            txtQuantity.TabIndex = 3;
             // 
             // button1
             // 
@@ -84,9 +84,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(button1);
-            Controls.Add(textBox2);
+            Controls.Add(txtQuantity);
             Controls.Add(label2);
-            Controls.Add(textBox1);
+            Controls.Add(txtItemName);
             Controls.Add(label1);
             Name = "InventoryForm";
             Text = "InventoryForm";
@@ -97,9 +97,9 @@
         #endregion
 
         private Label label1;
-        private TextBox textBox1;
+        private TextBox txtItemName;
         private Label label2;
-        private TextBox textBox2;
+        private TextBox txtQuantity;
         private Button button1;
     }
 }
