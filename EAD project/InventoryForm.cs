@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace EAD_project
 {
@@ -28,6 +29,8 @@ namespace EAD_project
 
         private void button1_Click(object sender, EventArgs e)
         {
+            string ItemName = txtItemName.Text;
+            string Quantity = txtQuantity.Text;
             MessageBox.Show("Inventory information submitted successfully!", "Submission", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
