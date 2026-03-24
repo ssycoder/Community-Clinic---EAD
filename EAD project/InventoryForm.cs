@@ -10,6 +10,12 @@ namespace EAD_project
 {
     public partial class InventoryForm : Form
     {
+        public class InventoryItem
+        {
+            public string? ItemName { get; set; }
+            public int Quantity { get; set; }
+        }
+
         public InventoryForm()
         {
             InitializeComponent();
