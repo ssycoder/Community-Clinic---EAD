@@ -30,5 +30,10 @@ namespace EAD_project
             InventoryForm inv = new InventoryForm();
             inv.Show();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
