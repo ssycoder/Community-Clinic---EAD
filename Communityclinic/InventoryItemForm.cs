@@ -10,19 +10,34 @@ namespace Communityclinic
         public InventoryItemForm()
         {
             InitializeComponent();
+
+            // Wire up button events with clear names
+            button1.Click += BtnSave_Click;
+            button2.Click += BtnClear_Click;
+            button3.Click += BtnUpdate_Click;
         }
 
-        
+        // Retrieve form data into InventoryItem object
         private InventoryItem GetFormData()
         {
             InventoryItem item = new InventoryItem();
 
             item.Item = txtItem.Text.Trim();
-            item.DateAdded = DateTime.Parse(txtDateAdded.Text); 
-            item.Quantity = int.Parse(txtQuantity.Text);        
+
+            DateTime.TryParse(txtDateAdded.Text, out DateTime dateAdded);
+            item.DateAdded = dateAdded;
+
+            int.TryParse(txtQuantity.Text, out int quantity);
+            item.Quantity = quantity;
+
             item.Description = txtDescription.Text.Trim();
-            item.Price = decimal.Parse(txtPrice.Text);          
-            item.Expiration = DateTime.Parse(txtExpiration.Text);
+
+            decimal.TryParse(txtPrice.Text, out decimal price);
+            item.Price = price;
+
+            DateTime.TryParse(txtExpiration.Text, out DateTime expiration);
+            item.Expiration = expiration;
+
             item.Category = txtCategory.Text.Trim();
             item.Unit = txtUnit.Text.Trim();
             item.BatchNumber = txtBatchNumber.Text.Trim();
@@ -34,7 +49,7 @@ namespace Communityclinic
             return item;
         }
 
-        
+        // Validates the form fields
         private bool ValidateForm()
         {
             StringBuilder errors = new StringBuilder();
@@ -63,10 +78,9 @@ namespace Communityclinic
             return true;
         }
 
-        
-        private void btn1_Click(object sender, EventArgs e)
+        // Save button click
+        private void BtnSave_Click(object sender, EventArgs e)
         {
-            
             if (!ValidateForm())
                 return;
 
@@ -76,15 +90,77 @@ namespace Communityclinic
                 InventoryDAL dal = new InventoryDAL();
                 bool success = dal.InsertItem(item);
 
-                if (success)
-                    MessageBox.Show("Item saved successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                else
-                    MessageBox.Show("Error saving item.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(
+                    success ? "Item saved successfully!" : "Error saving item.",
+                    success ? "Success" : "Error",
+                    MessageBoxButtons.OK,
+                    success ? MessageBoxIcon.Information : MessageBoxIcon.Error
+                );
+
+                if (success) ClearForm();
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Unexpected error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        // Clear button click
+        private void BtnClear_Click(object sender, EventArgs e)
+        {
+            ClearForm();
+        }
+
+        // Update button click
+        private void BtnUpdate_Click(object sender, EventArgs e)
+        {
+            if (!ValidateForm())
+                return;
+
+            try
+            {
+                InventoryItem item = GetFormData();
+                InventoryDAL dal = new InventoryDAL();
+                dal.Update(item); // Calling data from DAL to update the item
+
+                MessageBox.Show("Item updated successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Unexpected error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        // this Clears all fields
+        private void ClearForm()
+        {
+            txtItem.Text = "";
+            txtDateAdded.Text = "";
+            txtQuantity.Text = "";
+            txtDescription.Text = "";
+            txtPrice.Text = "";
+            txtExpiration.Text = "";
+            txtCategory.Text = "";
+            txtUnit.Text = "";
+            txtBatchNumber.Text = "";
+            txtManufacturer.Text = "";
+            txtSupplier.Text = "";
+            txtStatus.Text = "";
+            txtNotes.Text = "";
+        }
+
+        
+        private void label9_Click(object sender, EventArgs e) { 
+        //does absolutely nothing but makes error go away
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            // does nothing
+        }
+        private void label6_Click(object sender, EventArgs e)
+        {
+            // Does nothing
         }
     }
 }
