@@ -1,3 +1,5 @@
+using System.Data;
+using System.Data.SqlClient;
 namespace EAD_project
 {
     internal static class Program

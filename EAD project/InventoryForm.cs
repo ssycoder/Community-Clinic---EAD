@@ -6,8 +6,10 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using System.Xml.Linq;
+using System.Data;
+using System.Data.SqlClient;
 
-namespace EAD_project
+namespace EAD_projectv
 {
     public partial class InventoryForm : Form
     {
