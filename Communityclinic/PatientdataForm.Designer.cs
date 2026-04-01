@@ -28,15 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.Save = new System.Windows.Forms.Button();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.txtDOB = new System.Windows.Forms.TextBox();
+            this.txtAge = new System.Windows.Forms.TextBox();
+            this.txtAddress = new System.Windows.Forms.TextBox();
+            this.txtPhonenumber = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtGender = new System.Windows.Forms.TextBox();
+            this.txtAllergies = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -47,77 +47,78 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.txtMedications = new System.Windows.Forms.TextBox();
+            this.txtHistory = new System.Windows.Forms.TextBox();
+            this.Clear = new System.Windows.Forms.Button();
+            this.Update = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // Save
             // 
-            this.button1.Location = new System.Drawing.Point(387, 413);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Save";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.Save.Location = new System.Drawing.Point(387, 413);
+            this.Save.Name = "Save";
+            this.Save.Size = new System.Drawing.Size(75, 23);
+            this.Save.TabIndex = 0;
+            this.Save.Text = "Save";
+            this.Save.UseVisualStyleBackColor = true;
+            this.Save.Click += new System.EventHandler(this.Save_Click);
             // 
-            // textBox1
+            // txtName
             // 
-            this.textBox1.Location = new System.Drawing.Point(429, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 1;
+            this.txtName.Location = new System.Drawing.Point(429, 12);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(100, 20);
+            this.txtName.TabIndex = 1;
+            this.txtName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // textBox2
+            // txtDOB
             // 
-            this.textBox2.Location = new System.Drawing.Point(429, 49);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 2;
+            this.txtDOB.Location = new System.Drawing.Point(429, 49);
+            this.txtDOB.Name = "txtDOB";
+            this.txtDOB.Size = new System.Drawing.Size(100, 20);
+            this.txtDOB.TabIndex = 2;
             // 
-            // textBox3
+            // txtAge
             // 
-            this.textBox3.Location = new System.Drawing.Point(429, 90);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 3;
+            this.txtAge.Location = new System.Drawing.Point(429, 90);
+            this.txtAge.Name = "txtAge";
+            this.txtAge.Size = new System.Drawing.Size(100, 20);
+            this.txtAge.TabIndex = 3;
             // 
-            // textBox4
+            // txtAddress
             // 
-            this.textBox4.Location = new System.Drawing.Point(429, 134);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 4;
+            this.txtAddress.Location = new System.Drawing.Point(429, 134);
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(100, 20);
+            this.txtAddress.TabIndex = 4;
             // 
-            // textBox5
+            // txtPhonenumber
             // 
-            this.textBox5.Location = new System.Drawing.Point(429, 177);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 5;
+            this.txtPhonenumber.Location = new System.Drawing.Point(429, 177);
+            this.txtPhonenumber.Name = "txtPhonenumber";
+            this.txtPhonenumber.Size = new System.Drawing.Size(100, 20);
+            this.txtPhonenumber.TabIndex = 5;
             // 
-            // textBox6
+            // txtEmail
             // 
-            this.textBox6.Location = new System.Drawing.Point(429, 218);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 6;
+            this.txtEmail.Location = new System.Drawing.Point(429, 218);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(100, 20);
+            this.txtEmail.TabIndex = 6;
             // 
-            // textBox7
+            // txtGender
             // 
-            this.textBox7.Location = new System.Drawing.Point(429, 259);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 20);
-            this.textBox7.TabIndex = 7;
+            this.txtGender.Location = new System.Drawing.Point(429, 259);
+            this.txtGender.Name = "txtGender";
+            this.txtGender.Size = new System.Drawing.Size(100, 20);
+            this.txtGender.TabIndex = 7;
             // 
-            // textBox8
+            // txtAllergies
             // 
-            this.textBox8.Location = new System.Drawing.Point(429, 295);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 20);
-            this.textBox8.TabIndex = 8;
+            this.txtAllergies.Location = new System.Drawing.Point(429, 295);
+            this.txtAllergies.Name = "txtAllergies";
+            this.txtAllergies.Size = new System.Drawing.Size(100, 20);
+            this.txtAllergies.TabIndex = 8;
             // 
             // label1
             // 
@@ -210,47 +211,48 @@
             this.label10.TabIndex = 18;
             this.label10.Text = "Medications";
             // 
-            // textBox9
+            // txtMedications
             // 
-            this.textBox9.Location = new System.Drawing.Point(429, 374);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(100, 20);
-            this.textBox9.TabIndex = 19;
+            this.txtMedications.Location = new System.Drawing.Point(429, 374);
+            this.txtMedications.Name = "txtMedications";
+            this.txtMedications.Size = new System.Drawing.Size(100, 20);
+            this.txtMedications.TabIndex = 19;
             // 
-            // textBox10
+            // txtHistory
             // 
-            this.textBox10.Location = new System.Drawing.Point(429, 333);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(100, 20);
-            this.textBox10.TabIndex = 20;
+            this.txtHistory.Location = new System.Drawing.Point(429, 333);
+            this.txtHistory.Name = "txtHistory";
+            this.txtHistory.Size = new System.Drawing.Size(100, 20);
+            this.txtHistory.TabIndex = 20;
             // 
-            // button2
+            // Clear
             // 
-            this.button2.Location = new System.Drawing.Point(506, 413);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 21;
-            this.button2.Text = "Clear";
-            this.button2.UseVisualStyleBackColor = true;
+            this.Clear.Location = new System.Drawing.Point(506, 413);
+            this.Clear.Name = "Clear";
+            this.Clear.Size = new System.Drawing.Size(75, 23);
+            this.Clear.TabIndex = 21;
+            this.Clear.Text = "Clear";
+            this.Clear.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // Update
             // 
-            this.button3.Location = new System.Drawing.Point(273, 413);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 22;
-            this.button3.Text = "Update";
-            this.button3.UseVisualStyleBackColor = true;
+            this.Update.Location = new System.Drawing.Point(273, 413);
+            this.Update.Name = "Update";
+            this.Update.Size = new System.Drawing.Size(75, 23);
+            this.Update.TabIndex = 22;
+            this.Update.Text = "Update";
+            this.Update.UseVisualStyleBackColor = true;
+            this.Update.Click += new System.EventHandler(this.Update_Click);
             // 
-            // InventoryItemForm
+            // PatientdataForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.Update);
+            this.Controls.Add(this.Clear);
+            this.Controls.Add(this.txtHistory);
+            this.Controls.Add(this.txtMedications);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -261,17 +263,18 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
-            this.Name = "InventoryItemForm";
+            this.Controls.Add(this.txtAllergies);
+            this.Controls.Add(this.txtGender);
+            this.Controls.Add(this.txtEmail);
+            this.Controls.Add(this.txtPhonenumber);
+            this.Controls.Add(this.txtAddress);
+            this.Controls.Add(this.txtAge);
+            this.Controls.Add(this.txtDOB);
+            this.Controls.Add(this.txtName);
+            this.Controls.Add(this.Save);
+            this.Name = "PatientdataForm";
             this.Text = "InventoryItemForm";
+            this.Load += new System.EventHandler(this.PatientdataForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -279,15 +282,15 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.Button Save;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.TextBox txtDOB;
+        private System.Windows.Forms.TextBox txtAge;
+        private System.Windows.Forms.TextBox txtAddress;
+        private System.Windows.Forms.TextBox txtPhonenumber;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtGender;
+        private System.Windows.Forms.TextBox txtAllergies;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -298,9 +301,9 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox txtMedications;
+        private System.Windows.Forms.TextBox txtHistory;
+        private System.Windows.Forms.Button Clear;
+        private System.Windows.Forms.Button Update;
     }
 }

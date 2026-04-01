@@ -11,7 +11,7 @@ public class InventoryItem
     public DateTime Expiration { get; set; }
     public string Category { get; set; }
     public string Unit { get; set; }
-    public int BatchNumber { get; set; }
+    public string BatchNumber { get; set; }
     public string Manufacturer { get; set; }
     public string Supplier { get; set; }
     public string Status { get; set; }

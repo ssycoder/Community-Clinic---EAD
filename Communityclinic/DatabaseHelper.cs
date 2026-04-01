@@ -1,12 +1,14 @@
 ﻿using System.Data.SqlClient;
 
-public static class DatabaseHelper
+namespace Communityclinic
 {
-    private static string connectionString =
-        @"Data Source=TEEN-HUB-LAP-03;Initial Catalog=CommunityCareDB;Integrated Security=True";
-
-    public static SqlConnection GetConnection()
+    public static class DatabaseHelper
     {
-        return new SqlConnection(connectionString);
+        public static SqlConnection GetConnection()
+        {
+            return new SqlConnection(
+                "Data Source=desktop-e4f55fe;Initial Catalog=CommunityClinicLLOMDB;Integrated Security=True"
+            );
+        }
     }
 }
