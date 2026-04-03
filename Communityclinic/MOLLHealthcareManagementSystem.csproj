@@ -64,6 +64,12 @@
     <Compile Include="InventoryItemForm.Designer.cs">
       <DependentUpon>InventoryItemForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="LogoutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogoutForm.Designer.cs">
+      <DependentUpon>LogoutForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\Inventoryitems.cs" />
     <Compile Include="Models\PatientModels.cs" />
     <Compile Include="Data\PatientDAL.cs" />
@@ -107,6 +113,9 @@
     </Compile>
     <EmbeddedResource Include="InventoryItemForm.resx">
       <DependentUpon>InventoryItemForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogoutForm.resx">
+      <DependentUpon>LogoutForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PatientdataForm.resx">
       <DependentUpon>PatientdataForm.cs</DependentUpon>
