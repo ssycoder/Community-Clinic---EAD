@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Communityclinic.Models
 {
-    internal class PatientModels
+    public class PatientModels
     {
         public class Patient
         {

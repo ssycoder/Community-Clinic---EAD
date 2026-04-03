@@ -12,9 +12,9 @@ namespace Communityclinic
             InitializeComponent();
 
             // Wire up button events with clear names
-            button1.Click += BtnSave_Click;
-            button2.Click += BtnClear_Click;
-            button3.Click += BtnUpdate_Click;
+            Save.Click += BtnSave_Click;
+            Clear.Click += BtnClear_Click;
+            Update.Click += BtnUpdate_Click;
         }
 
         // Retrieve form data into InventoryItem object

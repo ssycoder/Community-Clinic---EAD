@@ -41,9 +41,9 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.Save = new System.Windows.Forms.Button();
+            this.Clear = new System.Windows.Forms.Button();
+            this.Update = new System.Windows.Forms.Button();
             this.txtDateAdded = new System.Windows.Forms.TextBox();
             this.txtQuantity = new System.Windows.Forms.TextBox();
             this.txtDescription = new System.Windows.Forms.TextBox();
@@ -179,32 +179,32 @@
             this.label13.TabIndex = 12;
             this.label13.Text = "Notes";
             // 
-            // button1
+            // Save
             // 
-            this.button1.Location = new System.Drawing.Point(13, 413);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Save";
-            this.button1.UseVisualStyleBackColor = true;
+            this.Save.Location = new System.Drawing.Point(13, 413);
+            this.Save.Name = "Save";
+            this.Save.Size = new System.Drawing.Size(75, 23);
+            this.Save.TabIndex = 13;
+            this.Save.Text = "Save";
+            this.Save.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // Clear
             // 
-            this.button2.Location = new System.Drawing.Point(127, 412);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "Clear";
-            this.button2.UseVisualStyleBackColor = true;
+            this.Clear.Location = new System.Drawing.Point(127, 412);
+            this.Clear.Name = "Clear";
+            this.Clear.Size = new System.Drawing.Size(75, 23);
+            this.Clear.TabIndex = 14;
+            this.Clear.Text = "Clear";
+            this.Clear.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // Update
             // 
-            this.button3.Location = new System.Drawing.Point(240, 411);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 15;
-            this.button3.Text = "Update";
-            this.button3.UseVisualStyleBackColor = true;
+            this.Update.Location = new System.Drawing.Point(240, 411);
+            this.Update.Name = "Update";
+            this.Update.Size = new System.Drawing.Size(75, 23);
+            this.Update.TabIndex = 15;
+            this.Update.Text = "Update";
+            this.Update.UseVisualStyleBackColor = true;
             // 
             // txtDateAdded
             // 
@@ -317,9 +317,9 @@
             this.Controls.Add(this.txtDescription);
             this.Controls.Add(this.txtQuantity);
             this.Controls.Add(this.txtDateAdded);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Update);
+            this.Controls.Add(this.Clear);
+            this.Controls.Add(this.Save);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
@@ -355,9 +355,9 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button Save;
+        private System.Windows.Forms.Button Clear;
+        private System.Windows.Forms.Button Update;
         private System.Windows.Forms.TextBox txtDateAdded;
         private System.Windows.Forms.TextBox txtQuantity;
         private System.Windows.Forms.TextBox txtDescription;
