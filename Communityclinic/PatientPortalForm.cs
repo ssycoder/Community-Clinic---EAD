@@ -157,5 +157,23 @@ namespace Communityclinic
         {
 
         }
+        //links to logout page
+        private void Logout_Click(object sender, EventArgs e)
+        { 
+            var result = MessageBox.Show(
+                "Are you sure you want to logout?",
+                "Confirm Logout",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
+
+            if (result == DialogResult.Yes)
+            {
+                LogoutForm loginForm = new LogoutForm();
+                loginForm.Show();
+                this.Close();
+            }
+        }
+    }
     }
 }
