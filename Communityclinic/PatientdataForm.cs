@@ -24,7 +24,7 @@ namespace Communityclinic
             // Loads initial data if needed
         }
 
-        // Save button click
+        // Save button
         private void Save_Click(object sender, EventArgs e)
         {
             try
