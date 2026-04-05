@@ -16,7 +16,7 @@ namespace Communityclinic
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new InventoryItemForm()); // open the input form directly        }
+            Application.Run(new InventoryItemForm()); // open the input form directly    test    }
         }
     }
 }
