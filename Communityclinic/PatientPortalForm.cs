@@ -40,9 +40,9 @@ namespace Communityclinic
             try
             {
                 PatientDAL dal = new PatientDAL();
-                PatientModels.Patient patient = dal.GetPatientByEmail(Email);
+               // PatientModels.Patient patient = dal.GetPatientByEmail(Email);
 
-                if (patient == null)
+               // if (patient == null)
                 {
                     MessageBox.Show("Patient record not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     this.Close();
@@ -51,16 +51,16 @@ namespace Communityclinic
 
 
                 // Fill textboxes with patient info
-                txtName.Text = patient.Name;
-                txtDOB.Text = patient.DateOfBirth.ToShortDateString();
-                txtAge.Text = patient.Age.ToString();
-                txtAddress.Text = patient.Address;
-                txtPhonenumber.Text = patient.PhoneNumber;
-                txtEmail.Text = patient.EmailAddress;
-                txtGender.Text = patient.Gender;
-                txtAllergies.Text = patient.Allergies;
-                txtHistory.Text = patient.History;
-                txtMedications.Text = patient.Medications;
+               // txtName.Text = patient.Name;
+                //txtDOB.Text = patient.DateOfBirth.ToShortDateString();
+                //txtAge.Text = patient.Age.ToString();
+               // txtAddress.Text = patient.Address;
+               // txtPhonenumber.Text = patient.PhoneNumber;
+               // txtEmail.Text = patient.EmailAddress;
+               // txtGender.Text = patient.Gender;
+               // txtAllergies.Text = patient.Allergies;
+                //txtHistory.Text = patient.History;
+                //txtMedications.Text = patient.Medications;
             }
             catch (Exception ex)
             {
@@ -175,5 +175,5 @@ namespace Communityclinic
             }
         }
     }
-    }
+    
 }
